@@ -4,52 +4,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio website for Your Name. Explore projects, experience, and contact details.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Your Name</h1>
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">Portfolio</p>
+        <h1 class="logo">Your Name</h1>
+        <p class="subhead">Web developer crafting polished websites and digital experiences.</p>
+      </div>
       <nav class="nav">
-        <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h2>Hi — I'm Your Name.</h2>
-      <p>I'm a [your role] who builds things on the web. Welcome to my portfolio.</p>
-      <p><a class="cta" href="#projects">See my work</a></p>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m Your Name.</p>
+        <h2>Building thoughtful websites with clean design and practical code.</h2>
+        <p>I help clients and teams turn ideas into polished portfolio sites, landing pages, and web apps.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#projects">View Work</a>
+          <a class="secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-summary">
+        <div class="summary-card">
+          <h3>CV Snapshot</h3>
+          <p><strong>Current role:</strong> [Your current title]</p>
+          <p><strong>Experience:</strong> [Years] years in web design and development</p>
+          <p><strong>Top skills:</strong> HTML, CSS, JavaScript, responsive design</p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
+    <section id="about" class="section-card">
+      <h3>About Me</h3>
+      <p>[Write a short bio here. Mention your background, what you enjoy building, and what type of work you are looking for.]</p>
+      <ul class="details-list">
+        <li><strong>Location:</strong> [City, Country]</li>
+        <li><strong>Availability:</strong> [Full-time / freelance / contract]</li>
+        <li><strong>Tools:</strong> [Figma, VS Code, Git, ...]</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section-card">
       <h3>Selected Projects</h3>
       <div class="projects-grid">
         <article class="card">
-          <h4>Project One</h4>
-          <p>Short description of project one.</p>
-          <p><a href="#">View project</a></p>
+          <h4>Project Title</h4>
+          <p>Short description of the project and the result you delivered.</p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
         </article>
         <article class="card">
-          <h4>Project Two</h4>
-          <p>Short description of project two.</p>
-          <p><a href="#">View project</a></p>
+          <h4>Another Project</h4>
+          <p>Brief description of a different project and what it achieved.</p>
+          <p><strong>Tech:</strong> [Tools used]</p>
+        </article>
+      </div>
+      <p class="small-note">Paste your portfolio project details in place of these placeholders so your site shows real work.</p>
+    </section>
+
+    <section id="experience" class="section-card">
+      <h3>Experience & CV</h3>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h4>Job Title</h4>
+          <p class="when">Company · Month Year – Present</p>
+          <p>[Write a short summary of your responsibilities and achievements in this role.]</p>
+        </article>
+        <article class="timeline-item">
+          <h4>Previous Role</h4>
+          <p class="when">Company · Month Year – Month Year</p>
+          <p>[Describe your contributions and results from this position.]</p>
         </article>
       </div>
     </section>
 
-    <section id="about">
-      <h3>About Me</h3>
-      <p>Brief bio. Mention skills, interests, and what you're looking for.</p>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="section-card">
       <h3>Contact</h3>
       <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername">@yourusername</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+      <p>Paste your CV details here and I can update the site text with your real information.</p>
     </section>
   </main>
 
