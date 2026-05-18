@@ -1,0 +1,16 @@
+/* Minimal responsive styles for portfolio */
+:root{--bg:#f7f7f9;--accent:#0b5fff;--text:#111}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:900px;margin:0 auto;padding:24px}
+.site-header{background:#fff;border-bottom:1px solid #e6e6ea}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.25rem}
+.nav a{margin-left:16px;color:inherit;text-decoration:none}
+.hero{padding:48px 0}
+.hero h2{margin:0 0 8px;font-size:2rem}
+.cta{display:inline-block;padding:8px 14px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.card{background:#fff;padding:16px;border-radius:8px;border:1px solid #e9e9ef}
+.site-footer{padding:16px 0;text-align:center;color:#666}
+@media (max-width:520px){.site-header .container{flex-direction:column;align-items:flex-start}.nav a{margin-left:0;margin-right:12px}}
